@@ -42,6 +42,13 @@ function getValue(myVal: number){
     return "OK"
 }
 getValue(2)
+
+// NOTE: never, better than :void in such case
+// Some functions never return a value:
+
+function fail(msg: string): never {
+  throw new Error(msg);
+}
 // o/p or the scope of func will onlny contain nums
 // function getFavoriteNumber(): number {
 //   return 26;

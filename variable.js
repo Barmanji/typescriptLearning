@@ -24,7 +24,7 @@ function greet(name) {
 greet("barmanji");
 function singUp(email, avatar, password) { }
 singUp("abc@abc.com", true, "abfai2"); // But what about default values? lets say i want avatar false as default
-var singUpUser = function (email, password, avatar) {
+var singUpUser = function(email, password, avatar) {
     if (avatar === void 0) { avatar = false; }
 }; // HACK:  Default param should always comes in the end else it will give you nightmares
 singUpUser("abc@abc.com", "123abc");
